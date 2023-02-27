@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
     public void increment (View v) {
         numberOfClicks++;
 
@@ -24,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     }
     public void decrement (View v) {
         numberOfClicks--;
-
         value = (TextView) findViewById(R.id.value);
         value.setText(""+numberOfClicks);
     }
